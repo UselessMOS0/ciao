@@ -1,0 +1,29 @@
+{{title}}
+<!--Centriamo la mappa alle nostre coordinate-->
+
+
+<google-map [center]="center">  
+  <!--Mettiamo un marker alle nostre coordinate-->
+  <map-marker [position]="position" 
+    [label]="label" 
+    [title]="title"
+    [options] = "markerOptions">
+  </map-marker>
+  
+  <map-marker [position]="position2" [label]="'casa'" [title]="title">
+  </map-marker>
+
+  <map-circle [center]="position"
+              [radius]="50"
+              [options] = 'circleOptions'>
+  </map-circle>
+  
+  <map-circle [center]="position2"
+              [radius]="50"
+              [options] = 'circleOptions2'>
+  </map-circle>
+  
+
+</google-map>
+
+<button (click)="onClick()">zio</button>
