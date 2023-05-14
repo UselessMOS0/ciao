@@ -22,8 +22,11 @@
               [radius]="50"
               [options] = 'circleOptions2'>
   </map-circle>
-  
+  <map-polygon [paths]="vertices">
+  </map-polygon>
 
+  <map-polygon [paths]="vertices2">
+  </map-polygon>
 </google-map>
 
 <button (click)="onClick()">zio</button>
